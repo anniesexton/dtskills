@@ -9,22 +9,15 @@ $aqua: #1ea094;
 	box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
-@mixin placeholderColor($color:#fff) {
-	::-webkit-input-placeholder {
-	   color: $color;
-	}
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}  
+}
 
-	:-moz-placeholder { /* Firefox 18- */
-	   color: $color;  
-	}
-
-	::-moz-placeholder {  /* Firefox 19+ */
-	   color: $color;  
-	}
-
-	:-ms-input-placeholder {  
-	   color: $color;  
-	}
+@include placeholder {
+    color: white;
 }
 
 @mixin transitionCSS($property, $time) {
@@ -139,12 +132,13 @@ form.signup {
 		color: $red;
 		font-weight: bold;
 		font-size: 19px;
-		@include placeholderColor();
+		
 		&:focus {
 			outline: none;
 		}
 
 		&[type="text"] {
+			
 			background-color: rgba(0, 0, 0, 0);
 		}
 		&[type="submit"] {
@@ -173,7 +167,7 @@ form.signup {
 	position:relative;
 }
 #alert_graphic {
-	//@include opacity(0,0);
+	
 	position: absolute;
 }
 

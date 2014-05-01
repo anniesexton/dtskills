@@ -3,6 +3,7 @@ $(document).ready(function() {
 
 	var scrolltop = $(window).scrollTop();
 	infoGraphicAnimate(scrolltop);
+	$('input, textarea').placeholder();
 });
 
 function showVideo() {
@@ -15,14 +16,25 @@ function showVideo() {
 
 function infoGraphicAnimate(scrolltop) {
 	var scrolltop = $(window).scrollTop();
+	var triggered = false;
 	if (scrolltop >= 400) {
-		$(".info_graphic").css("top", "0");
+		triggered = true;
+		$(".info_graphic").animate({
+			"top":0
+		});
+		$("#basic_graphic").animate({
+			"opacity": 0
+		}, 500);
+		
 	}
 	$(window).scroll(function() {
 		scrolltop = $(window).scrollTop();
 
-		if (scrolltop >= 400) {
-			$(".info_graphic").css("top", "0");
+		if (scrolltop >= 400 && triggered == false) {
+			triggered = true;
+			$(".info_graphic").animate({
+				"top":0
+			});
 			$("#basic_graphic").animate({
 				"opacity": 0
 			}, 500);
