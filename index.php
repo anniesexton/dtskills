@@ -20,11 +20,25 @@
 			<p><a href="" id="watch_video">Watch the Video</a></p>
 			<p id="signup_copy"> Give us your email, and we'll let you know when it's available to the public.</p>
 
-			<form action="" method="POST" id="top_signup" class="signup">
+		<!-- 	<form action="" method="POST" id="top_signup" class="signup">
 				<input type="text" name="email" class="email_field" placeholder="Email">
 				<input type="submit" value="Submit">
 				<div class="clearboth"></div>
-			</form>
+			</form> -->
+
+			<!-- Begin MailChimp Signup Form -->
+			
+			<div id="mc_embed_signup">
+				<form action="http://anniesextondesign.us7.list-manage.com/subscribe/post?u=cabf73a5ed0103852c5b04cc8&amp;id=f22e02f44a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate signup" target="_blank" novalidate>
+					
+					<input type="email" value="" name="EMAIL" class="email_field" id="mce-EMAIL" placeholder="Email" required>
+				    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+				    <div style="position: absolute; left: -5000px;"><input type="text" name="b_cabf73a5ed0103852c5b04cc8_f22e02f44a" value=""></div>
+					<input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="button">
+				</form>
+			</div>
+
+			<!--End mc_embed_signup-->
 		</div>
 	</div>
 
@@ -48,11 +62,26 @@
 			<p class="body_copy">Drawing on our experience in hardware and software, we've spent the last few months creating working prototypes and near-final forms. We are truly excited about getting Twine into people's hands to see what new uses others will find for it.</p>
 
 			<p id="get_excited"><a href="">Get Excited With Us.</a></p>
-			<form action="" method="POST" id="bottom_signup" class="signup">
+			<!-- <form action="" method="POST" id="bottom_signup" class="signup">
 				<input type="text" name="email" class="email_field" placeholder="Email">
 				<input type="submit" value="Submit">
 				<div class="clearboth"></div>
-			</form>
+			</form> -->
+
+			<!-- Begin MailChimp Signup Form -->
+			
+			<div id="mc_embed_signup">
+				<form action="http://anniesextondesign.us7.list-manage.com/subscribe/post?u=cabf73a5ed0103852c5b04cc8&amp;id=f22e02f44a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate signup" target="_blank" novalidate>
+					
+					<input type="email" value="" name="EMAIL" class="email_field" id="mce-EMAIL" placeholder="Email" required>
+				    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+				    <div style="position: absolute; left: -5000px;"><input type="text" name="b_cabf73a5ed0103852c5b04cc8_f22e02f44a" value=""></div>
+					<input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="button">
+				</form>
+			</div>
+
+			<!--End mc_embed_signup-->
+
 		</div>
 
 		<footer>

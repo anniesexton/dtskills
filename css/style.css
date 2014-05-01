@@ -139,7 +139,7 @@ form.signup input:focus {
   outline: none;
 }
 /* line 145, ../scss/style.scss */
-form.signup input[type="text"] {
+form.signup input[type="email"] {
   background-color: rgba(0, 0, 0, 0);
 }
 /* line 149, ../scss/style.scss */
