@@ -1,0 +1,253 @@
+@import url(http://fonts.googleapis.com/css?family=Muli:300,400,400italic,300italic);
+/* line 6, ../scss/style.scss */
+.borderbox, * {
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+}
+
+/* line 53, ../scss/style.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 59, ../scss/style.scss */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* line 64, ../scss/style.scss */
+h2 {
+  font-family: 'Muli', sans-serif;
+  margin: 26px 0;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+/* line 71, ../scss/style.scss */
+a {
+  color: #ad1724;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid;
+  padding-bottom: 3px;
+}
+/* line 78, ../scss/style.scss */
+a:hover {
+  color: #fff;
+}
+
+/* line 83, ../scss/style.scss */
+a, p {
+  font-size: 20px;
+  margin: 30px 0;
+}
+
+/* line 88, ../scss/style.scss */
+p.body_copy {
+  font-size: 16px;
+}
+
+/* line 92, ../scss/style.scss */
+#top_section {
+  background: url("../images/top-bg.jpg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 782px;
+  color: #fff;
+  border-bottom: 4px solid #1ea094;
+}
+/* line 100, ../scss/style.scss */
+#top_section h2 {
+  margin-top: 10px;
+  color: #1ea094;
+}
+/* line 105, ../scss/style.scss */
+#top_section .container {
+  padding-bottom: 60px;
+}
+
+/* line 110, ../scss/style.scss */
+.logo_video_container {
+  width: 598px;
+  margin: 0 auto;
+  min-height: 344px;
+  padding-top: 30px;
+}
+/* line 115, ../scss/style.scss */
+.logo_video_container #video_container {
+  display: none;
+  border: 4px solid #1ea094;
+  padding: 12px;
+}
+
+/* line 122, ../scss/style.scss */
+#signup_copy {
+  font-weight: bold;
+  color: #1ea094;
+}
+
+/* line 127, ../scss/style.scss */
+.container {
+  width: 460px;
+  margin: 0 auto;
+  display: inline-block;
+  padding: 30px 0;
+}
+
+/* line 136, ../scss/style.scss */
+form.signup input {
+  border: 4px solid #ad1724;
+  padding: 16px 17px;
+  color: #ad1724;
+  font-weight: bold;
+  font-size: 19px;
+}
+/* line 13, ../scss/style.scss */
+form.signup input ::-webkit-input-placeholder {
+  color: white;
+}
+/* line 17, ../scss/style.scss */
+form.signup input :-moz-placeholder {
+  /* Firefox 18- */
+  color: white;
+}
+/* line 21, ../scss/style.scss */
+form.signup input ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: white;
+}
+/* line 25, ../scss/style.scss */
+form.signup input :-ms-input-placeholder {
+  color: white;
+}
+/* line 143, ../scss/style.scss */
+form.signup input:focus {
+  outline: none;
+}
+/* line 147, ../scss/style.scss */
+form.signup input[type="text"] {
+  background-color: rgba(0, 0, 0, 0);
+}
+/* line 150, ../scss/style.scss */
+form.signup input[type="submit"] {
+  color: #fff;
+  background-color: #ad1724;
+}
+/* line 154, ../scss/style.scss */
+form.signup input[type="submit"]:hover {
+  background-color: rgba(0, 0, 0, 0);
+  border: 4px solid #fff;
+  cursor: pointer;
+}
+
+/* line 163, ../scss/style.scss */
+.clearboth {
+  clear: both;
+}
+
+/* line 166, ../scss/style.scss */
+#middle_section {
+  width: 100%;
+  border-bottom: 4px solid #1ea094;
+}
+
+/* line 171, ../scss/style.scss */
+#animated_graphic {
+  min-height: 206px;
+  position: relative;
+}
+
+/* line 175, ../scss/style.scss */
+#alert_graphic {
+  position: absolute;
+}
+
+/* line 180, ../scss/style.scss */
+.info_graphic {
+  position: relative;
+  top: 50px;
+  transition: top 0.5s;
+  -webkit-transition: top 0.5s;
+  /* Safari */
+}
+
+/* line 186, ../scss/style.scss */
+#bottom_section {
+  background: url("../images/bottom-bg.jpg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 603px;
+  color: #fff;
+}
+/* line 192, ../scss/style.scss */
+#bottom_section h2 {
+  color: #fff;
+  width: 380px;
+  margin: 26px auto;
+}
+
+/* line 199, ../scss/style.scss */
+#get_excited {
+  margin-top: 45px;
+}
+
+/* line 203, ../scss/style.scss */
+footer {
+  padding: 20px 0;
+  margin-top: 60px;
+}
+/* line 206, ../scss/style.scss */
+footer p {
+  font-size: 12px;
+}
+
+@media (max-width: 595px) {
+  /* line 212, ../scss/style.scss */
+  .logo_video_container {
+    width: 100%;
+    min-height: 0;
+  }
+  /* line 215, ../scss/style.scss */
+  .logo_video_container #video {
+    width: 100%;
+  }
+}
+@media (max-width: 460px) {
+  /* line 222, ../scss/style.scss */
+  .container, .logo_video_container, footer, #bottom_section h2 {
+    width: 100%;
+    padding: 10px 20px;
+  }
+
+  /* line 227, ../scss/style.scss */
+  #animated_graphic {
+    min-height: 0;
+  }
+  /* line 229, ../scss/style.scss */
+  #animated_graphic img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 405px) {
+  /* line 236, ../scss/style.scss */
+  input {
+    width: 100%;
+    display: block;
+  }
+  /* line 240, ../scss/style.scss */
+  input[type="submit"] {
+    margin-top: 5px;
+  }
+}
+@media screen and (max-width: 344px) {
+  /* line 247, ../scss/style.scss */
+  #logo {
+    width: 100%;
+  }
+}
