@@ -57,7 +57,7 @@ body {
 h2 {
 	font-family: 'Muli', sans-serif;
 	margin: 26px 0;
-	font-size: 40px;
+	font-size: 38px;
 	font-weight: 300;
 }
 
@@ -112,9 +112,14 @@ p.body_copy {
 	}
 }
 
+#watch_video {
+	margin: -4px 0 52px;
+}
+
 #signup_copy {
 	font-weight: bold;
 	color: $aqua;
+	margin-bottom: 19px;
 }
 
 .container {
@@ -235,9 +240,7 @@ footer {
 			margin-top: 5px;
 		}
 	}
-}
 
-@media screen and (max-width: 344px) {
 	#logo {
 		width:100%;
 	}
